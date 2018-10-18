@@ -39,11 +39,11 @@ namespace Challenge_366___Easy___Word_Funnel_1
             else if (choice == "bonus1")
             {
                 List<string> words = new List<string>();
-                string line;
-
+                
                 // Parse all words from wordList.
                 using (StreamReader reader = File.OpenText("./wordList.txt"))
                 {
+					string line;
                     while ((line = reader.ReadLine()) != null)
                     {
                         words.Add(line);
